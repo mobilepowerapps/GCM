@@ -1,5 +1,8 @@
 gApp = new Array();
 
+console.log(".js ready");
+alert("loading .js");
+
 gApp.deviceready = false;
 gApp.gcmregid = '';
 
@@ -15,6 +18,10 @@ window.onbeforeunload  =  function(e) {
 
 
 document.addEventListener('deviceready', function() {
+//!!!!
+alert("device ready" ) ;
+console.log("dev ready");
+
   // This is the Cordova deviceready event. Once this is called Cordova is available to be used
   $("#app-status-ul").append('<li>deviceready event received</li>' );
 
